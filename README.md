@@ -45,6 +45,14 @@ spring-ai-rag-pipeline/
 
 ---
 
+## Screenshots
+
+### Compare mode — Stream vs Precise side by side
+![Compare tab](docs/screenshot-compare.png)
+
+### Metrics dashboard
+![Metrics tab](docs/screenshot-metrics.png)
+
 ## How It Works
 
 ### Ingestion (one-time per document)
