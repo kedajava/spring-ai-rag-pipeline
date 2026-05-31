@@ -115,6 +115,25 @@ cd spring-ai-rag-pipeline
 ```bash
 docker-compose up -d
 ```
+### First-time only: create the Chroma collection
+
+```powershell
+# Windows
+Invoke-WebRequest `
+  -Uri "http://localhost:8001/api/v2/tenants/default_tenant/databases/default_database/collections" `
+  -Method POST `
+  -ContentType "application/json" `
+  -Body '{"name": "rag-collection", "get_or_create": true}' `
+  -UseBasicParsing
+```
+
+```bash
+# Mac/Linux
+curl -X POST http://localhost:8001/api/v2/tenants/default_tenant/databases/default_database/collections \
+  -H "Content-Type: application/json" \
+  -d '{"name": "rag-collection", "get_or_create": true}'
+```
+
 
 Chroma runs at `http://localhost:8001`.
 
