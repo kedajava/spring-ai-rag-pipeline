@@ -106,7 +106,7 @@ All three query modes share steps 1–3. They differ in what comes after retriev
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/<your-username>/spring-ai-rag-pipeline.git
+git clone https://github.com/kedajava/spring-ai-rag-pipeline.git
 cd spring-ai-rag-pipeline
 ```
 
